@@ -1,0 +1,72 @@
+body{
+    background:url("p.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.createaccount{
+    background: rgba(25,25,25,0.6);
+    width: 230px;
+    padding: 15px;
+    margin-top: -5px;
+    margin:0 auto;
+    margin-top:185px;
+    height: 290px;
+}
+
+form{
+    width: 100%x;
+    text-align: center;
+    margin:0 auto;
+    margin-top: -10px;
+}
+
+input{
+    width: 232px;
+    height: 30px;
+     background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 13px;
+    transition: border 0.5s;
+    outline: none;
+    height: 10px;
+    color: gold;
+}
+
+button{
+    width: 232px;
+    height: 30px;
+    border: none;
+    background: red;
+    opacity: 0.9;
+}
+
+button:hover{
+    background :gold;
+}
+
+h2{
+    color:red;
+}
+
+p{
+    color: white ;
+}
+
+
+a{
+    color:red;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+::placeholder{
+    color: orange;
+}

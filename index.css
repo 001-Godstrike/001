@@ -1,0 +1,17 @@
+body {
+    background: yellow ;
+    
+}
+
+.intro{
+    font-size:18px;
+}
+
+button{
+    width:120px;
+    height: 50px;
+    border:none ;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-left: 15px;
+}

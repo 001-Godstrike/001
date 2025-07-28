@@ -1,0 +1,33 @@
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>create account</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    
+    <body>
+        
+        <div class="createAccount">
+            <form  onsubmit="loginUser(event)" action="login.html" method="get">
+                
+     <h2>Login</h2>
+                
+  <input type="text" id="username" placeholder="Username"required>
+  <p></p>
+  <input type="email" id="email" placeholder="Email"required>
+  <p></p>
+  <input type="password" id="input password" placeholder="Password" required>
+  <p></p>
+  <button type="submit">Login</button>
+                   
+            </form>
+            
+            <p>
+                Don't have an account? <a href="createaccount.html">Create Account</a></p>
+        </div>
+        
+        <script src="auth.js"></script>
+    </body>
+    
+</html>

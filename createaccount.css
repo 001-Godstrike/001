@@ -1,0 +1,84 @@
+body{
+    background:url("p.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.createaccount{
+    background: rgba(25,25,25,0.6);
+    width: 230px;
+    padding: 15px;
+    margin-top: -5px;
+    margin:0 auto;
+    margin-top:170px;
+    height: 340px;
+}
+
+form{
+    width: 100%x;
+    text-align: center;
+    margin-top: -10px;
+     
+}
+
+input{
+    width: 232px;
+    height: 30px;
+    border:60px;
+    outline:60px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 18px;
+    font-weight: 500;
+    padding:13px;
+    transition: border 0.5s;
+    outline: none;
+    height: 10px;
+    color: gold;
+    
+    
+}
+
+button{
+    width: 232px;
+    height: 30px;
+    border: none;
+    background: red;
+    opacity: 0.9;
+}
+
+button:hover{
+    background :gold;
+}
+
+p{
+    color:white;
+}
+
+a{
+    color:red;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black ;
+}
+
+::placeholder{
+    color: orange;
+}
+
+.adminhub{
+    
+button{
+    width:30px;
+    font-size:1px;
+}
+    
+    
+}

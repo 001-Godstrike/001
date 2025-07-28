@@ -1,0 +1,57 @@
+body {
+    
+}
+
+.task1{
+    background: rgba(25,25,25,0.6);
+    text-align: center;
+    width: 130px;
+    padding: 7px;
+    margin-left: 15px;
+    margin-top:50px;
+    height: 260px;
+    
+h2{
+    color:gold;
+}
+
+button{
+    width: 95px;
+    height: 35px;
+    border:none;
+    border-radius: 20px;
+}
+
+strong{
+    color:white;
+}
+
+}
+
+.head{
+    
+   h1{
+       color:green;
+   }
+
+}
+
+h2{
+       color:red;
+   }
+   
+h3{
+    color:gold;
+}
+
+h4{
+    color: black;
+}
+
+.hj{
+    color:orange;
+}
+
+strong{
+    color:purple;
+}

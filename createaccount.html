@@ -1,0 +1,43 @@
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>create account</title>
+        <link rel="stylesheet" href="createaccount.css">
+    </head>
+    
+    <body>
+        
+        <div class="adminhub">
+            <a href="admin.html"><button>Admin Hub</button></a>
+        </div>
+        
+        <div class="createAccount">
+            <form action="createaccount.html" method="get" onsubmit="createAccount(event)">
+                
+     <h2><div style="color:red">
+        Create Account 
+     </div></h2>
+                
+   <input type="text" id="fullname" placeholder="Full Name"required>
+   <p></p>
+  <input type="text" id="username" placeholder="Username"required>
+  <p></p>
+  <input type=email" id="email"  placeholder="Email"required>
+  <p></p>
+  <input type="number" id="phonenumber" placeholder="Phone Number" required>
+  <p></p>
+  <input type="password" id="inputpassword" placeholder="Input Password" required>
+  
+  <p></p>
+  <button type="submit">Sign Up</button>
+                   
+            </form>
+            
+            <p>Already have an account?  <a href="login.html">Login</a></p>
+        </div>
+        
+        <script src="auth.js"></script>
+    </body>
+    
+</html
