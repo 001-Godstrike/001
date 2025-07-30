@@ -1,33 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Home</title>
+</head>
+<body>
     
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>create account</title>
-        <link rel="stylesheet" href="login.css">
-    </head>
-    
-    <body>
+    <div class="container">
         
-        <div class="createAccount">
-            <form  onsubmit="loginUser(event)" action="login.html" method="get">
-                
-     <h2>Login</h2>
-                
-  <input type="text" id="username" placeholder="Username"required>
-  <p></p>
-  <input type="email" id="email" placeholder="Email"required>
-  <p></p>
-  <input type="password" id="input password" placeholder="Password" required>
-  <p></p>
-  <button type="submit">Login</button>
-                   
-            </form>
+        <form action="login.html" method="post" onsubmit="loginUser(event)">
+        <br>
+        <span id="branding">
+            <h2>LOGIN</h2>
+        </span>
+        
+        
+        <br><br>
             
-            <p>
-                Don't have an account? <a href="createaccount.html">Create Account</a></p>
-        </div>
         
-        <script src="auth.js"></script>
-    </body>
-    
+          <label for="username">
+              <strong>👤 Username:</strong>
+              </label>
+        <br>
+        <input type="text" name="username" id="username" placeholder="Username" required>
+        <br><br><br>
+          
+          <label for="password">
+              <strong>🔑 Password:</strong>
+              </label>
+        <br>
+        <input type="password" name="password" id="password" placeholder="Input Password" required>
+        <br><br><br>
+          
+            
+        <button type="submit">Login</button>
+        <br><br>
+        
+        <span id="branding">
+        
+        <p>Don't have an account?
+        <a href="index.html">Sign Up</a></p>
+        <br><br>
+        <footer>
+            Gold Miners &copy 2025
+        </footer>
+        <br>
+            
+        </span>
+        
+    </form>
+        
+    </div>
+    <script src="auth.js"></script>
+</body>
 </html>

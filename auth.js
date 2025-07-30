@@ -1,14 +1,14 @@
 
 function generateUserCode() {
-  return 'ES-' + Math.floor(1000 + Math.random() * 9000);
+  return 'GM-' + Math.floor(1000 + Math.random() * 9000);
 }
 function createAccount(event) {
   event.preventDefault(); 
   const fullname = document.getElementById("fullname").value.trim();
   const username = document.getElementById("username").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const number = document.getElementById("phonenumber").value.trim();
-  const password = document.getElementById("inputpassword").value.trim();
+  const email = document.getElementById("number").value.trim();
+  const number = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
 
   if (!username || !email || !fullname || !number || !password) {
     alert("Please fill all fields");
@@ -26,7 +26,7 @@ function createAccount(event) {
 
   users.push({ fullname, username, number, email, password });
   localStorage.setItem("users", JSON.stringify(users));
-  alert("Account created successfully! Please keep this code as it will be used for all future activities Your unique E-socialites code is:  " + userCode );
+  alert("Account created successfully! Please keep this code as it will be used for all future activities. Your unique Gold Miner code is:  " + userCode );
   window.location.href = "login.html"; 
 }
 
@@ -34,21 +34,21 @@ function createAccount(event) {
 function loginUser(event) {
   event.preventDefault();
   const username = document.getElementById("username").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("input password").value.trim();
+  
+  const password = document.getElementById("password").value.trim();
 
-  if (!email || !password) {
-    alert("Please enter email and password");
+  if (!username || !password) {
+    alert("Please enter username and password");
     return;
   }
 
   let users = JSON.parse(localStorage.getItem("users") || "[]");
-  let user = users.find(u => u.email === email && u.password === password);
+  let user = users.find(u => u.username === username && u.password === password);
   if (user) {
     alert("Login successful! Welcome " + user.username);
     localStorage.setItem("loggedInUser", JSON.stringify(user));
-    window.location.href = "dashboard.html"; // redirect on success
+    window.location.href = "task.html"; // redirect on success
   } else {
-    alert("Invalid email or password");
+    alert("Invalid username or password");
   }
 }
